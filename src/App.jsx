@@ -1,6 +1,6 @@
 import './App.css'
 import React from 'react'
-import  {BrowserRouter, Routes, Route } from "react-router-dom";
+import  {HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "../src/components/navbar/Navbar.jsx";
 import Home from "./pages/Home.jsx"
 import New from "./pages/New.jsx";
@@ -11,7 +11,7 @@ import Categories from "./pages/Categories.jsx";
 
 function App() {
   return(
-    <BrowserRouter>
+    <HashRouter>
         <Navbar />
       <Routes>
         <Route path="/" element={<Home />}/>
@@ -20,7 +20,7 @@ function App() {
         <Route path="/trending" element={<Trending />}/>
         <Route path="/categories" element={<Categories/>}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
   
 }
