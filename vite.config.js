@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "https://DelDazDev.github.io/Web-Noticias-DesafioMentor"
+  base: "https://DelDazDev.github.io"
 })
